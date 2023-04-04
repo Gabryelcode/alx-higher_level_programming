@@ -53,12 +53,12 @@ class Rectangle:
         return (self.__width) * 2 + (self.__height * 2)
 
     def __str__(self):
-OAOAOA        string = ""
+        string = ""
         if self.__width is 0 or self.__height is 0:
-OAOAOAOAOAOA            return string
+            return string
         for i in range(self.__height):
             for j in range(self.__width):
-OAOAOA                string += str(self.print_symbol)
+                string += str(self.print_symbol)
             if i is not self.__height - 1:
                 string += "\n"
         return string
@@ -71,8 +71,8 @@ class Rectangle:
         print("Bye rectangle...")
 
     def bigger_or_equal(rect_1, rect_2):
-OAOAOAOAOAOA        if type(rect_1) is not Rectangle:
-OAOAOA            raise TypeError("rect_1 must be an instance of Rectangle")
+        if type(rect_1) is not Rectangle:
+            raise TypeError("rect_1 must be an instance of Rectangle")
         if type(rect_2) is not Rectangle:
             raise TypeError("rect_2 must be an instance of Rectangle")
         if rect_2.area() > rect_1.area():
